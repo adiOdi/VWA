@@ -1,0 +1,41 @@
+\documentclass{vwa}
+
+\usepackage[ngerman]{babel} % set language to (new) german
+%\usepackage[british]{babel} % set language to british english
+
+\title{The Life of a Jedi}
+\subtitle{Beyond the Force}
+\author{Luke Skywalker}
+\date{34 ABY} % can be any text (date) or the command \today
+
+
+\begin{document}
+
+\mymaketitle
+
+\tableofcontents
+
+%% chapters
+\include{chapters/introduction}
+\include{chapters/the_story_begins}
+\include{chapters/chapter2}
+
+%% list of figures
+\listoffigures
+
+%% bibliography
+% \nocite{*} % show all references (include unused references)
+\bibliographystyle{plain}
+\bibliography{references/literature} % print bibliography
+
+%% appendix
+\appendix
+
+\chapter{Umfragebogen}
+\label{apx:survey}
+Hier kann z.B. die Umfrage eingebunden werden.
+% \includepdf[pages=-]{appendix/survey.pdf}
+
+
+
+\end{document}
