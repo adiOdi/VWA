@@ -12,4 +12,7 @@
 chapters/*
 !chapters/*.tex
 
+!a_extra
+a_extra/*
+!a_extra/*.txt
 
