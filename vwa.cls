@@ -69,24 +69,9 @@
 %%
 \newcommand{\mymaketitle}{
     \begin{titlepage}
-        % \small{KLEX\\Klusemann Extern\\Marschallgasse 19-21\\A-8020 Graz} 
-        % \hfill
-        % \raisebox{-.5\height}{\includegraphics[width=4cm]{figures/Klex-Logo.png}}
-        % %\includegraphics[width=4cm]{figures/Klex-Logo.png}
-        \makebox[\textwidth]{\raisebox{-.5\height}{\small{
-                KLEX 
-                \par
-                Klusemann Extern 
-                \par 
-                Marschallgasse 19-21 
-                \par 
-                A-8020 Graz
-            }}
-            \hfill 
-            \raisebox{-.5\height}{
-                \includegraphics[width=4cm]{figures/Klex-Logo.png}
-            }
-        }
+        \small{KLEX\\Klusemann Extern\\Marschallgasse 19-21\\A-8020 Graz} 
+        \hfill
+        \includegraphics[width=4cm]{figures/Klex-Logo.png}
         \par
         \centering
         \LARGE \@title \par
