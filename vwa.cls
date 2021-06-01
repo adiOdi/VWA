@@ -69,21 +69,41 @@
 %%
 \newcommand{\mymaketitle}{
     \begin{titlepage}
+        % \small{KLEX\\Klusemann Extern\\Marschallgasse 19-21\\A-8020 Graz} 
+        % \hfill
+        % \raisebox{-.5\height}{\includegraphics[width=4cm]{figures/Klex-Logo.png}}
+        % %\includegraphics[width=4cm]{figures/Klex-Logo.png}
+        \makebox[\textwidth]{\raisebox{-.5\height}{\small{
+                KLEX 
+                \par
+                Klusemann Extern 
+                \par 
+                Marschallgasse 19-21 
+                \par 
+                A-8020 Graz
+            }}
+            \hfill 
+            \raisebox{-.5\height}{
+                \includegraphics[width=4cm]{figures/Klex-Logo.png}
+            }
+        }
+        \par
         \centering
         \LARGE \@title \par
         \@ifundefined{@subtitle}{}
         { % else
-            \large \@subtitle \par
+            \Large \@subtitle \par
         }
         \@ifundefined{@author}{}
         { % else
             \vspace{1cm}
-            \Large \@author \par
+            \large Vorwissenschaftliche Arbeit\\vorgelegt von \@author \par
         }
+        \large BetreuerIn: Manuel Menzinger \par
         \@ifundefined{@date}{}
         { % else
             \vspace{1cm}
-            \Large \@date
+            \Large Schuljahr \@date
         }
     \end{titlepage}
 }
