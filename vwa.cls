@@ -69,9 +69,9 @@
 %%
 \newcommand{\mymaketitle}{
     \begin{titlepage}
-        \small{KLEX\\Klusemann Extern\\Marschallgasse 19-21\\A-8020 Graz} 
-        \hfill
-        \includegraphics[width=4cm]{figures/Klex-Logo.png}
+        % \small{KLEX\\Klusemann Extern\\Marschallgasse 19-21\\A-8020 Graz} 
+        % \hfill
+        % \includegraphics[width=4cm]{figures/Klex-Logo.png}
         \par
         \centering
         \LARGE \@title \par
