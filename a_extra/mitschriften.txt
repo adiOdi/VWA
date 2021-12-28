@@ -21,3 +21,8 @@ what effect the use of AI has on society?
         can be used maliciously, can be unaligned
 how we can build aligned and save AI
     we dont, its a tool, but we can try
+
+22.12.21:
+Data=Learning/Knowledge=programming symbolisch/subsymbolisch
+backpropagation
+Mixing
