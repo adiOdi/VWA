@@ -10,15 +10,15 @@
 \section{Decision trees}
 \subsection{Definition}
 
-A decision tree is a form of AI, which is, in comparison, rather easy, and not that complex. It exports a tree consisting of nodes, in which each node answers a yes/no question. 
+A decision tree is a tree consisting of nodes, in which each node answers a yes/no question. 
 
-To create such a tree, data is needed, which is used to shape the tree accordingly.
+A decision tree can also be made symbolically, but to create such a tree  subsymbolically, data is needed, which is used to shape the tree accordingly.
 The hard part is figuring out what question the next node will use for its split. 
 
-One method of measuring the usefulness of a question is the GINI method.
-It is calculated as follows: %Gini impurity = 1-(yes/n)^2-(no/n)^2
+One method of measuring the usefulness of a question is the Gini method.
+It is calculated as follows: Gini impurity $= 1-(yes/n)^2-(no/n)^2$
 The smaller this impurity, the less mixed the output is. Which is what we want, as less mixed means the tree is surer of its output. 
-So to choose the next node to add to a tree, we measure the GINI impurity of all possible parameters, and choose the one with the smallest impurity. We repeat this process until we only have few samples left in each leaf.
+So to choose the next node to add to a tree, we measure the GINI impurity of all possible parameters, and choose the one with the smallest impurity. We repeat this process until we only have few samples left in each leaf. %example
 
 Once created, to find an answer, one must walk down the tree, following the path the nodes lead you, until an end (a leaf) is met.
 
