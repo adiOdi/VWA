@@ -1,30 +1,38 @@
 \chapter{What is AI?}
 \section{Definition}
-First it is helpful defining what AI is, so this chapter will start by defining AI.
-The field of AI is very broad, and defining this field is quite challenging, but also useful for this thesis. 
+First it is necessary defining what is meant by AI in this thesis, as there is a very broad range of definitions.%http://agisi.org/Defs_intelligence.html
 
-To do this, there are a few prerequisites: 
-First, the AI has to somehow get a sort of input, like sound from a microphone, click position on a website, ... 
-Secondly, the AI has to process this input, 
+To get an overview it is very helpful to view an AI as an entity, a sort of black box. This construct can be called an "Agent". 
+This thesis will shed some light into these black boxes.
+
+\subsection{Agents}
+This agent has to somehow get a sort of input, like sound from a microphone, click position on a website, ... 
+Then, it has to process this input, 
 and lastly it has to have some sort of output, like driving somewhere, or showing different things on a screen, ... 
 
-In cite(modern approach), this whole construct is called an "Agent", the input is called "Percept", and the output "Action".
+The input can be called "Percept", and the output "Action". % cite(modernapproach)
+Image
 
-These agents can act in very different environments.\\This definition is, perhaps not coincidentally, quite similar to how functions might be defined: \\In mathematics, a function is a binary relation between two sets that associates each element of the first set to exactly one element of the second set. 
-% cite(https://en.wikipedia.org/wiki/Function_(mathematics)) 
-\\In the case of an AI, the first set are the inputs, and the second set are the different outputs. \\Important to note here is, that the input might also be what happened until now, not only what happens at this instance in time. 
+These Agents vary widely in their implementation and function, and can range from bots on the web, to the microchip in your smart stove or Roomba. 
+Agents are this diverse because they have to act in very different environments, for example a computer, a room where a robot is driving around, a map, a game, ...
 
-These Agents vary widely in their implementation and function, and can range from bots on the web, to your stove. In this thesis however, we will mostly focus on the internal structure of the agents, which can be similar, even in very different environments.
-In this thesis the author wants to create an overview of these different internal structures.
+This thesis however, will mostly focus on the internal structure of the agents, which can be similar, even in very different environments.
+The goal of this thesis is an overview of these different internal structures.
 
-As the concept of an agent is so openly defined, it helps to narrow it down further. For example a random number generator has all the prerequisites for an agent, but I will focus only on intelligent agents.
+As the concept of an agent is so openly defined, it helps to narrow it down further. For example a random number generator has all the prerequisites for an agent, but this thesis will focus only on intelligent agents.
 
-Generally, intelligence is viewed as "the ability to learn, understand and think logically about things; the ability to do this well" 
+\subsection{Intelligence}
+For this, we must define intelligence first.
+
+Commonly, intelligence is viewed as "the ability to learn, understand and think logically about things; the ability to do this well" 
 % cite(https://www.oxfordlearnersdictionaries.com/definition/english/intelligence)
-Important to stress here are two separate concepts: Learning, and thinking logically.
-In AI these concepts are sometimes separated, as to say there is a learning, and an applied phase, where the logical thinking comes into play. \\But there are also models combining these two, where learning takes place while applying the previously learned.
 
-Intelligent agents can still be a lot of things: A calculator has input, processes it intelligently 
+Important to stress here are two separate concepts: Learning, and thinking logically.
+In AI, these concepts can be separated, as to say there is a learning, and an applied phase, where the logical thinking comes into play. This is called supervised learning.
+There are also models combining these two phases, where learning takes place while also applying the previously learned. This is then called unsupervised learning. %example
+
+\section{Conclusion}
+This restriction of only intelligent agents is still not very narrow, as intelligent agents can still be a lot of things: A calculator has input, processes it intelligently, and shows the result, as does a player of a game, ...
 
 \section{Usage}
-As we will later see, there are very different models for AI, which all have their own little problems but also advantages. So in practical use, different models are often chained together, to leverage the advantages of each sort of agent, to create an agent better than the individual agents.
+There are very different models for AI, as will be explained in more detail in the next chapters, but of course they all have their own little problems but also advantages. So in practical use, different models are often chained together, to leverage the advantages of each sort of agent, to create an agent better than the individual agents. %examples, but also rewrite
