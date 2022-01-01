@@ -1,7 +1,7 @@
 \chapter{Categorization}
-Simple map
-Description
-\section{symbolic vs subsymbolic}
+% Simple map
+% Description
+\section{Symbolic vs subsymbolic}
 A first big distinction is to make between symbolic and subsymbolic AI. 
 The difference is in how knowledge about the environment is stored and used. % https://towardsdatascience.com/symbolic-vs-subsymbolic-ai-paradigms-for-ai-explainability-6e3982c6948a
 In symbolic AI, knowledge is coded into an agent, while in subsymbolic AI knowledge is generally learned by an agent through observations (=data). These observations can either be pre-recorded or acquired by trial and error. (The structure is still hard coded through)
@@ -14,3 +14,13 @@ As it is often the case, there is a cost-accuracy payoff, and whether subsymboli
 % cite video of backflip
 \subsection{Data}
 The requirement for data in subsymbolic AI is also the reason why data collection is getting increasingly important in our time. 
+\section{Supervised vs unsupervised}
+In supervised learning, in contrast to unsupervised learning labeled data is used instead of unlabeled data. 
+Labeled data is easier to use, but harder to get. Labeled data can be a lot of things, and it does not necessarily have to be human-labeled. A label can also be the output of an action, like e.g. the view time of a video on YouTube presented in different ways, or when the data is the weather yesterday, the label could be the weather today.
+
+In supervised learning algorithms like backpropagation can be used to model a function, where some input-output pairs are given.
+
+In unsupervised learning the AI has to find connections and the structure of the data on its own, as no clear input-output pairs are given.
+Here algorithms like support vector machines can be used to cluster data. Unsupervised learning can be used for e.g. serving ads based on interaction with an agent like Facebook. User data can be clustered and analyzed without the need for labeling.
+
+Of course these approaches can also be combined: In so called semi-supervised learning only parts of the data are labeled. This approach brings with it the convenience of not having to label all the data, while still having the greater accuracy and ease of supervised learning.
