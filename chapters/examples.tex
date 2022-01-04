@@ -28,6 +28,9 @@ There are two advantages of decision trees in comparison to other forms of AI. O
 Another benefit decision trees offer is the low computational complexity, in both training and application. Of course, they can grow arbitrarily large, but with the right techniques % pruning
 they can be brought back to reasonable sizes, which just capture the essentials.
 
+There are two methods for cutting the size of a tree: Early stopping and pruning. In early stopping we stop a branch as soon as we cannot split the data with sufficiently low Gini impurity. This can be very efficient, but there are cases where one question does not help, but two do. 
+So to avoid stopping too early, one can first generate the whole tree, and then prune useless branches away.
+
 Of course, they are not perfect: For one they require a lot of data to be conclusive, and as they are one of the simpler forms of AI, they need to get quite big to capture complex concepts.
 
 \section{Neural nets}
@@ -42,9 +45,9 @@ As there are normally too many possible values for the parameters not every poss
 In backpropagation, a supervised method, an input is given, and the output is compared to the known correct output. Now the nodes responsible for the biggest error are slightly nudged in the right direction.
 
 \section{Comparison}
-complexity
-accuracy
-training
-application
-performance
-resources
+% complexity
+% accuracy
+% training
+% application
+% performance
+% resources
