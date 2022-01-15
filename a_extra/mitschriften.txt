@@ -6,7 +6,7 @@
 
 12.01.2020 17:30-17:55:
     Durchschauen von Eingabemaske
-    Buch reinforcement learning an introductioon
+    Buch reinforcement learning an introduction
 towards data science
 
 transhumanismus
@@ -26,3 +26,5 @@ how we can build aligned and save AI
 Data=Learning/Knowledge=programming symbolisch/subsymbolisch
 backpropagation
 Mixing
+
+https://www.elementsofai.com/
