@@ -15,7 +15,6 @@
 !chapters
 chapters/*
 !chapters/*/
-chapters/*/*
 !chapters/**.tex
 
 # ignore everxthing but .txt files in extra and subfolders of it
