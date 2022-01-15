@@ -5,4 +5,10 @@ As a parameterless approach, KNN works by saving the whole of the training data,
 The weight depends on the real-live weight of the dimensions (e.g. color could have a lower significance than the size of an object to categorize).
 As for the ways in which the neighbors are combined: There are many options here, like e.g. Majority vote, average, weighed average, ...
 \subsection{SVMs}
-A problem with KNN type approaches is high memory usage, as all the training data has to be stored. To comba
+A problem with KNN type approaches is high memory usage, as all the training data has to be stored. To combat this, one can use the fact that in most problems the entries close to the border are more helpful than entries in the middle of a decisive cluster.
+
+In a SVM the few entries along the border are stored, these are called support vectors, as they "hold up" the border. When a decision needs to be made, only the side of the border has to be checked to come to a conclusion. This can also mean a significant increase in efficiency, as not all distances have to be checked like in KNN.
+
+This reduces the problem to one of fitting a curve to some points, which is already well-researched, and the parameters to choose here are on how detailed the curve can be while still not overfitting.
+\subsection{Usage}
+SVMs are often the first approach to try as they are relatively simple, and yield good results in a wide variety of use cases.
