@@ -10,7 +10,8 @@
 
 !chapters
 chapters/*
-!chapters/*.tex
+!chapters/*/
+!chapters/**.tex
 
 !a_extra
 a_extra/*
