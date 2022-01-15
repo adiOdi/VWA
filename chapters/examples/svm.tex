@@ -1,4 +1,8 @@
 \section{Support vector machines}
 \label{sec:SVM}
-\subsection{Definition}
-A parameterless approach 
+\subsection{K-nearest-Neighbours}
+As a parameterless approach, KNN works by saving the whole of the training data, representing it in a n-dimensional space, and letting the k-nearest neighbors decide how to act. There are only few parameters to control now, and the amount of parameters is no longer strictly bound by the complexity of the problem at hand. Mainly, there remain: the k, the weight of the different dimensions, and the way the neighbors are combined. 
+The weight depends on the real-live weight of the dimensions (e.g. color could have a lower significance than the size of an object to categorize).
+As for the ways in which the neighbors are combined: There are many options here, like e.g. Majority vote, average, weighed average, ...
+\subsection{SVMs}
+A problem with KNN type approaches is high memory usage, as all the training data has to be stored. To comba
