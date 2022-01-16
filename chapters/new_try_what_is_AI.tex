@@ -6,13 +6,13 @@ To get an overview it is helpful to view an AI as an entity, a sort of black box
 This thesis will shed some light into these black boxes.
 
 \subsection{Agents}
-This agent has to somehow get a sort of input, like sound from a microphone, click position on a website, ... 
+This agent has to somehow get a sort of input, like sound from a microphone, or a click position on a website.
 Then, it has to process this input, 
-and lastly it has to have some sort of output, like driving somewhere, or showing different things on a screen, ... 
+and lastly it has to have some sort of output, like driving somewhere, or showing different things on a screen.
 
 \myfigure{figures/Agents}
     {width=0.8\textwidth, height=0.5\textheight} % max width / height
-    {Interaction of agent with its environment}   % caption
+    {Interaction of an agent and its environment}   % caption
     {Agent}   % optional short caption for table of figures
     {fig:agent}    % label
 
@@ -46,4 +46,4 @@ There are very different models for AI, as will be explained in more detail in t
 \subsection{Overfitting}
 When a model performs good on training, but bad on testing data, this is called overfitting. It happens when the model is "memorizing" the answers, which results in less general knowledge.
 \subsection{Cross validation}
-To combat overfitting cross validation can be used.
+To combat overfitting cross validation can be used. Cross validation is a process where the the border between training and test data is defined differently a few times, and the same learning algorithm is applied to all of these cases. Then the best one is used.
