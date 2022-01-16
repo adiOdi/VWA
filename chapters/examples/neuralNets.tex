@@ -6,6 +6,15 @@ A neural net is a structure where values are passed on through layers of nodes. 
 
 First the amount of layers and nodes has to be defined, and to train the neural net, these parameters can be tuned.
 
-As there are normally too many possible values for the parameters not every possible combination can be brute forced. There are different methods for tuning the parameters. Two examples are back propagation and evolutionary learning. Of course these parameters could, in theory, also be filled in by hand, but this is normally not feasible.
+As there are normally too many possible values for the parameters not every possible combination can be brute forced. There are different methods for tuning the parameters. Of course these parameters could, in theory, also be filled in by hand, but this is normally not feasible. Two methods to fill them in are back propagation and evolutionary learning.
 
-In backpropagation, a supervised method, an input is given, and the output is compared to the known correct output. Now the nodes responsible for the biggest error are slightly nudged in the right direction.
+In backpropagation \ref{fig:backpropagation}, a supervised method, an input is given, and the output is compared to the known correct output. Now the nodes responsible for the biggest error are slightly nudged in the right direction. 
+
+\myfigure{figures/Backpropagation}
+    {width=0.8\textwidth, height=0.5\textheight} % max width / height
+    {Neural network backpropagation}   % caption
+    {Backpropagation}   % optional short caption for table of figures
+    {fig:backpropagation}    % label
+
+
+% \footnote{RIP.}.
