@@ -111,7 +111,7 @@
 %%	\myfigure{figures/deathstar.png}{0.8}{Plan of the original deathstar}{fig:deathstar}
 %%
 \newcommand{\myfigure}[5]{
-    \begin{figure}[h!]
+    \begin{figure}[ht!]
           \centering
           \includegraphics[keepaspectratio,#2]{#1}
           \caption[#4]{#3}
