@@ -16,6 +16,7 @@
 \RequirePackage[automark]{scrlayer-scrpage} % for auto generated headings
 \RequirePackage{graphicx} % to include graphics
 \RequirePackage[usenames,dvipsnames,hyperref]{xcolor}
+\usepackage{multicol}
 
 \setlength{\marginparwidth}{0pt}
 \setlength{\hoffset}{25pt}
@@ -69,9 +70,13 @@
 %%
 \newcommand{\mymaketitle}{
     \begin{titlepage}
-        % \small{KLEX\\Klusemann Extern\\Marschallgasse 19-21\\A-8020 Graz} 
-        % \hfill
-        % \includegraphics[width=4cm]{figures/Klex-Logo.png}
+        \begin{multicols}{2}             
+            KLEX\\Klusemann Extern\\Marschallgasse 19-21\\A-8020 Graz\\
+
+
+            \hfill\includegraphics[height=2.5cm]{figures/KLex-Logo.png}
+        \end{multicols}
+        \vfill
         \par
         \centering
         \LARGE \@title \par
@@ -90,6 +95,7 @@
             \vspace{1cm}
             \Large Schuljahr \@date
         }
+        \vfill
     \end{titlepage}
 }
 
