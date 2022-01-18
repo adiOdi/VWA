@@ -71,10 +71,9 @@
 \newcommand{\mymaketitle}{
     \begin{titlepage}
         \begin{multicols}{2}             
-            KLEX\\Klusemann Extern\\Marschallgasse 19-21\\A-8020 Graz\\
-
-
-            \hfill\includegraphics[height=2.5cm]{figures/KLex-Logo.png}
+            KLEX\\Klusemann Extern\\Marschallgasse 19-21\\A-8020 Graz
+            \vfill\hfill % next column/align right
+            \includegraphics[height=2.5cm]{figures/KLex-Logo.pdf}
         \end{multicols}
         \vfill
         \par
