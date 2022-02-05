@@ -23,7 +23,7 @@
 
 \RequirePackage[
     %%% general options
-    pdftex=true,      %% sets up hyperref for use with the pdftex program
+    % pdftex=true,      %% sets up hyperref for use with the pdftex program
     %plainpages=false, %% set it to false, if pdflatex complains: ``destination with same identifier already exists''
     %
     %%% extension options
