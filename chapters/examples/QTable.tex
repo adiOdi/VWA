@@ -3,6 +3,6 @@
 \subsection{Definition}
 A Q-Table is a very literal interpretation of the definition of AI: As an AI maps inputs to outputs, a very simple method without a function in the background would just be a table. To implement such a table is only possible in discrete space, as every state has to have an action assigned to it.
 
-To train a Q-Table is relatively straightforward: There is a score assigned to every State-Action pair. Then the agent can learn with reinforcment learning: Should an action lead to a positive reward the score of the previous state-action pair is updated up slightly and vice versa.
+To train a Q-Table is relatively straightforward: There is a score assigned to every State-Action pair. Then the agent can learn with reinforcement learning: Should an action lead to a positive reward the score of the previous state-action pair is updated up slightly and vice versa.
 
-To update the values often the function $Q_{new}=(1-\alpha)*Q_{old}+\alpha*reward$is used.($\alpha=$ learning rate)
+To update the values often the function $Q_{new}=(1-\alpha)*Q_{old}+\alpha*reward$ is used.($\alpha=$ learning rate)
