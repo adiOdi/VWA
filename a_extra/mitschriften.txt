@@ -11,15 +11,15 @@ towards data science
 
 transhumanismus
 
-What AI is? 
-    AI is just a tool
-what effect the use of AI has on society? 
+What artificial intelligence is? 
+    artificial intelligence is just a tool
+what effect the use of artificial intelligence has on society? 
     missuse/good use
-    what previously impossible to solve tasks can be solved using AI?
+    what previously impossible to solve tasks can be solved using artificial intelligence?
         loads of data
     what new problems arise
         can be used maliciously, can be unaligned
-how we can build aligned and save AI
+how we can build aligned and save artificial intelligence
     we dont, its a tool, but we can try
 
 22.12.21:

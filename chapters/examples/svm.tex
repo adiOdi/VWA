@@ -1,21 +1,21 @@
 \section{Support vector machines}
 \label{sec:SVM}
 \subsection{K-nearest-Neighbours}
-As a parameterless approach, KNN works by saving the whole of the training data, representing it in a n-dimensional space, and letting the k-nearest neighbors decide how to act. There are only few parameters to control now, and the amount of parameters is no longer strictly bound by the complexity of the problem at hand. Mainly, there remain: the k, the weight of the different dimensions, and the way the neighbors are combined. 
+As a parameterless approach, k-nearest-neighbours works by saving the whole of the training data, representing it in an n-dimensional space, and letting the k-nearest neighbors decide how to act. There are only few parameters to control now, and the amount of parameters is no longer strictly bound by the complexity of the problem at hand. Mainly, there remain: the k, the weight of the different dimensions, and the way the neighbors are combined. 
 The weight depends on the real-live weight of the dimensions (e.g. color could have a lower significance than the size of an object to categorize).
 As for the ways in which the neighbors are combined: There are many options here, like e.g. Majority vote, average, weighed average, ...
 \myfigure{figures/KNN.pdf}
     {width=0.8\textwidth, height=0.5\textheight} % max width / height
     {K-Nearest-Neighbours}   % caption
     {KNN}   % optional short caption for table of figures
-    {fig:KNN}    % label
+    {fig:k-nearest-neighbours}    % label
 
-\subsection{SVMs}
-A problem with KNN type approaches is high memory usage, as all the training data has to be stored. To combat this, one can use the fact that in most problems the entries close to the border are more helpful than entries in the middle of a decisive cluster.
+\subsection{Support vector machines}
+A problem with k-nearest-neighbours type approaches is high memory usage, as all the training data has to be stored. To combat this, one can use the fact that in most problems the entries close to the border are more helpful than entries in the middle of a decisive cluster.
 
-So as an extension of KNNs, SVMs were developed. They come with most of the strengths of KNNs, while eliminating some weaknesses.
+So as an extension of k-nearest-neighbours, support vector machines were developed. They come with most of the strengths of k-nearest-neighbours, while eliminating some weaknesses.
 
-In a SVM only the few entries along the border are stored, these are called support vectors, as they "hold up" the border. When a decision needs to be made, only the side of the border has to be checked to come to a conclusion. This can also mean a significant increase in efficiency, as not all distances have to be checked like in KNN.
+In a support vector machine only the few entries along the border are stored, these are called support vectors, as they "hold up" the border. When a decision needs to be made, only the side of the border has to be checked to come to a conclusion. This can also mean a significant increase in efficiency, as not all distances have to be checked like in k-nearest-neighbours.
 
 This reduces the problem to one of fitting a curve to some points, which is already well-researched, and the parameters to choose here are on how detailed the curve can be while still not overfitting.
 
@@ -23,10 +23,10 @@ This reduces the problem to one of fitting a curve to some points, which is alre
 \myfigure{figures/SVM.pdf}
     {width=0.8\textwidth, height=0.5\textheight} % max width / height
     {Support Vector Machine}   % caption
-    {SVM}   % optional short caption for table of figures
+    {support vector machine}   % optional short caption for table of figures
     {fig:SVM}    % label
 
 \subsection{Usage}
-SVMs are often the first approach tried, as they are relatively simple, and yield good results in a wide variety of use cases. 
+Support vector machines are often the first approach tried, as they are relatively simple, and yield good results in a wide variety of use cases. 
 
 They are relatively simple to view and understand, should there only be few important dimensions.

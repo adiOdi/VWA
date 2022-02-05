@@ -1,20 +1,20 @@
 \chapter{Categorization}
 % Simple map
 % Description
-As there are many models of AI, all working differently, there are also a few distinctions that can be made between them. This thesis will focus on three fairly important distinctions that can be drawn between the models.
+As there are many models of artificial intelligence, all working differently, there are also a few distinctions that can be made between them. This thesis will focus on three fairly important distinctions that can be drawn between the models.
 \section{Symbolic vs subsymbolic}
-A first big distinction is to make between symbolic and subsymbolic AI. 
+A first big distinction is to make between symbolic and subsymbolic artificial intelligence. 
 The difference is in how knowledge about the environment is stored and used. % https://towardsdatascience.com/symbolic-vs-subsymbolic-ai-paradigms-for-ai-explainability-6e3982c6948a
-In symbolic AI, knowledge is coded into an agent, while in subsymbolic AI knowledge is generally learned by an agent through observations (=data). These observations can either be pre-recorded or acquired by trial and error. (The structure is still hard coded)
+In symbolic artificial intelligence, knowledge is coded into an agent, while in subsymbolic artificial intelligence knowledge is generally learned by an agent through observations (=data). These observations can either be pre-recorded or acquired by trial and error. (The structure is still hard coded)
 
-Which sort of AI is better to use really depends on the circumstances: 
-Symbolic AI for a complex subject normally requires more time to program in comparison, and needs a programmer well versed in the subject. 
-Subsymbolic AI on the other hand depends on Data being available. Of course, it still is complex to program such a system, but the programmer does not have to know the subject at hand. %cite the thing with programmers not knowing the language but still being able to make a translator for it
-Another aspect to keep in mind is the accuracy: Symbolic AI can have a 100 percent accuracy rate when programmed correctly, as it is just logical statements and numbers chained together by some operators, while with a subsymbolic AI it is normally hard to get a 100 percent accurate model, and most models are capped at some (high) percentage of accuracy. This is in part because of incorrect/incomplete data, but also because of considerations like time and resource constrains while training. Subsymbolic AI can still be more accurate in certain domains: When there is no one correct answer but good data for example.
-As it is often the case, there is a cost-accuracy payoff, and whether subsymbolic or symbolic AI is better suited really depends on the use case. Often they are combined to achieve better results. This work will focus on subsymbolic AI. \cite{semisupervised}
+Which sort of artificial intelligence is better to use really depends on the circumstances: 
+Symbolic artificial intelligence for a complex subject normally requires more time to program in comparison, and needs a programmer well versed in the subject. 
+Subsymbolic artificial intelligence on the other hand depends on Data being available. Of course, it still is complex to program such a system, but the programmer does not have to know the subject at hand. %cite the thing with programmers not knowing the language but still being able to make a translator for it
+Another aspect to keep in mind is the accuracy: Symbolic artificial intelligence can have a 100 percent accuracy rate when programmed correctly, as it is just logical statements and numbers chained together by some operators, while with a subsymbolic artificial intelligence it is normally hard to get a 100 percent accurate model, and most models are capped at some (high) percentage of accuracy. This is in part because of incorrect/incomplete data, but also because of considerations like time and resource constrains while training. Subsymbolic artificial intelligence can still be more accurate in certain domains: When there is no one correct answer but good data for example.
+As it is often the case, there is a cost-accuracy payoff, and whether subsymbolic or symbolic artificial intelligence is better suited really depends on the use case. Often they are combined to achieve better results. This work will focus on subsymbolic artificial intelligence. \cite{semisupervised}
 % cite video of backflip https://youtu.be/WT0WtoYz2jE?t=68
 \subsection{Data}
-The requirement for data in subsymbolic AI is also the reason why data collection is getting increasingly important in our time. 
+The requirement for data in subsymbolic artificial intelligence is also the reason why data collection is getting increasingly important in our time. 
 
 \section{Supervised vs unsupervised learning} \cite[p695]{MA}
 In supervised learning, in contrast to unsupervised learning labeled data is used instead of unlabeled data. 
@@ -22,13 +22,13 @@ Labeled data is easier to use, but harder to get. Labeled data can be a lot of t
 
 In supervised learning algorithms like backpropagation can be used to model a function, where some input-output pairs are given.
 
-In unsupervised learning the AI has to find connections and the structure of the data on its own, as no clear input-output pairs are given.
+In unsupervised learning the artificial intelligence has to find connections and the structure of the data on its own, as no clear input-output pairs are given.
 Here algorithms like support vector machines can be used to cluster data. Unsupervised learning can be used for e.g. serving ads based on interaction with an agent like Facebook. User data can be clustered and analyzed without the need for labeling.
 
 Of course these approaches can also be combined: In so called semi-supervised learning only parts of the data are labeled. This approach brings with it the convenience of not having to label all the data, while still having the greater accuracy and ease of supervised learning.
 
 \section{Parameter(less)} \cite[p737]{MA}
-In many algorithms, like e.g. neural nets one hurdle is finding a number of parameters big enough to accurately describe a concept, while still not  overfitting \autoref{sec:overfit}. The problem here is that this number of parameters is not universal, and has to be newly reconsidered for each problem. To eliminate this need for a decision, there are also parameterless options. 
+In many algorithms, like e.g. neural nets one hurdle is finding a number of parameters big enough to accurately describe a concept, while still not  overfitting \autoref{sec:overfitting}. The problem here is that this number of parameters is not universal, and has to be newly reconsidered for each problem. To eliminate this need for a decision, there are also parameterless options. 
 
 So called parameterless approaches do not base their complexity on the problem, but rather on the training data available. Rather than representing the problem with parameters, often a part of the training data/the whole of it is used to come to a decision. This can be thought of as clustering.
 One example for a parameterless approach is K-nearest neighbors/Support vector machines \autoref{sec:SVM}
@@ -43,14 +43,14 @@ One example for a parameterless approach is K-nearest neighbors/Support vector m
     Memory      & ? & ? \\
 \end{tabular}
 
-Complexity: SVM/DT/NN
+% Complexity: SVM/DT/NN
 
-accuracy: depends
+% accuracy: depends
 
-training: SVM pro (actually KNN)
+% training: SVM pro (actually KNN)
 
-application: depends, DT easier to read
+% application: depends, DT easier to read
 
-Performance: Similar, QT fastest, KNN prob? Slow
+% Performance: Similar, QT fastest, KNN prob? Slow
 
-resources: =performance, KNN+QT memory
+% resources: =performance, KNN+QT memory
