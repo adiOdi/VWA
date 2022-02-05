@@ -33,10 +33,10 @@
     %
     %%% PDF-specific display options
     bookmarks=true,          %% if true, generate PDF bookmarks (requires two passes of pdflatex)
-    bookmarksopen=false,     %% if true, show all PDF bookmarks expanded
-    bookmarksnumbered=false, %% if true, add the section numbers to the bookmarks
-    %pdfstartpage={1},        %% determines, on which page the PDF file is opened
-    pdfpagemode=None         %% None, UseOutlines (=show bookmarks), UseThumbs (show thumbnails), FullScreen
+    bookmarksopen=true,     %% if true, show all PDF bookmarks expanded
+    bookmarksnumbered=true, %% if true, add the section numbers to the bookmarks
+    pdfstartpage={5},        %% determines, on which page the PDF file is opened
+    pdfpagemode=UseOutlines         %% UseOutlines (=show bookmarks), UseThumbs (show thumbnails), FullScreen
 ]{hyperref}
 
 % PDF settings
