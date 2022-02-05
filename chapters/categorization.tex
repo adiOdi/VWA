@@ -1,7 +1,7 @@
 \chapter{Categorization}
 % Simple map
 % Description
-% why and how this chapter is built up
+As there are many models of AI, all working differently, there are also a few distinctions that can be made between them. This thesis will focus on three fairly important distinctions that can be drawn between the models.
 \section{Symbolic vs subsymbolic}
 A first big distinction is to make between symbolic and subsymbolic AI. 
 The difference is in how knowledge about the environment is stored and used. % https://towardsdatascience.com/symbolic-vs-subsymbolic-ai-paradigms-for-ai-explainability-6e3982c6948a
@@ -11,8 +11,8 @@ Which sort of AI is better to use really depends on the circumstances:
 Symbolic AI for a complex subject normally requires more time to program in comparison, and needs a programmer well versed in the subject. 
 Subsymbolic AI on the other hand depends on Data being available. Of course, it still is complex to program such a system, but the programmer does not have to know the subject at hand. %cite the thing with programmers not knowing the language but still being able to make a translator for it
 Another aspect to keep in mind is the accuracy: Symbolic AI can have a 100 percent accuracy rate when programmed correctly, as it is just logical statements and numbers chained together by some operators, while with a subsymbolic AI it is normally hard to get a 100 percent accurate model, and most models are capped at some (high) percentage of accuracy. This is in part because of incorrect/incomplete data, but also because of considerations like time and resource constrains while training. Subsymbolic AI can still be more accurate in certain domains: When there is no one correct answer but good data for example.
-As it is often the case, there is a cost-accuracy payoff, and whether subsymbolic or symbolic AI is better suited really depends on the use case. Often they are combined to achieve better results. This work will focus on subsymbolic AI. 
-% cite video of backflip
+As it is often the case, there is a cost-accuracy payoff, and whether subsymbolic or symbolic AI is better suited really depends on the use case. Often they are combined to achieve better results. This work will focus on subsymbolic AI. \cite{semisupervised}
+% cite video of backflip https://youtu.be/WT0WtoYz2jE?t=68
 \subsection{Data}
 The requirement for data in subsymbolic AI is also the reason why data collection is getting increasingly important in our time. 
 
@@ -34,7 +34,16 @@ So called parameterless approaches do not base their complexity on the problem, 
 One example for a parameterless approach is K-nearest neighbors/Support vector machines \autoref{sec:SVM}
 
 \section{Comparison}
-complexity: SVM/DT/NN
+\begin{tabular}{l p{5cm} p{5cm}}
+    Metric      & Symbolic  & Subsymbolic\\
+    Complexity  & ? & ? \\
+    Training    & none & yes \\
+    Application & deterministic&could be nondeterministic\\
+    Performance & ? & ? \\
+    Memory      & ? & ? \\
+\end{tabular}
+
+Complexity: SVM/DT/NN
 
 accuracy: depends
 
@@ -42,6 +51,6 @@ training: SVM pro (actually KNN)
 
 application: depends, DT easier to read
 
-performance: Similar, QT fastest, KNN prob? slow
+Performance: Similar, QT fastest, KNN prob? Slow
 
 resources: =performance, KNN+QT memory

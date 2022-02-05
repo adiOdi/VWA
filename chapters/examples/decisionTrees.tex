@@ -4,8 +4,8 @@
 
 A decision tree is a tree consisting of nodes, in which each node answers a yes/no question. 
 
-A decision tree can also be made symbolically, but to create such a tree  subsymbolically, data is needed, which is used to shape the tree accordingly.
-The hard part is figuring out what question the next node will use for its split. 
+A decision tree can be made symbolically, but to create one subsymbolically, data is needed, which is used to shape the tree accordingly.
+The hard part is figuring out what question the next node will split the data by. 
 
 One method of measuring the usefulness of a question is the Gini method.
 It is calculated as follows: Gini impurity $= 1-(yes/n)^2-(no/n)^2$
@@ -19,13 +19,15 @@ There are two advantages of decision trees in comparison to other forms of AI. O
 
 Another benefit decision trees offer is the low computational complexity, in both training and application. Of course, they can grow arbitrarily large, but with the right techniques they can be brought back to reasonable sizes, which just capture the essentials.
 
-There are two methods for cutting the size of a tree: Early stopping and pruning. In early stopping we stop a branch as soon as we cannot split the data with sufficiently low Gini impurity. This can be very efficient, but there are cases where one question does not help, but two do. %XOR
+There are two methods for cutting the size of a tree: Early stopping and pruning. In early stopping we stop a branch as soon as we cannot split the data with sufficiently low Gini impurity. This can be very efficient, but there are cases where one question does not help at all, but two do. One such case would be a XOR-Gate, as one input alone does not provide enough information, so the tree would stop, although the question could be answered by two questions.
 So to avoid stopping too early, one can first generate the whole tree, and then prune useless branches away.
 
 Of course, decision trees are not perfect: For one they require a lot of data to be conclusive, and as they are one of the simpler forms of AI, they need to get quite big to capture complex concepts.
 
 \myfigure{figures/VWA-tree.pdf}
     {width=0.8\textwidth, height=0.5\textheight} % max width / height
-    {decision tree}   % caption
+    {This Image depicts a decision tree}   % caption
     {decision tree}   % optional short caption for table of figures
     {fig:decisiontree}    % label
+
+ 
