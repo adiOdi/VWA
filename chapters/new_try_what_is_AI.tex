@@ -43,6 +43,14 @@ This restriction of only intelligent agents is still not very narrow, as intelli
 \section{General}
 \subsection{Usage}
 But there are very different models for artificial intelligence, as will be explained in more detail in the next chapters, but of course they all have their own little problems but also advantages. So in practical use, different models are often chained together, to leverage the advantages of each sort of agent, to create an agent better than the individual agents. %examples, but also rewrite
+A GAN - a generative adverserial network would be one example: In such a setup there are two sub-agents (Generator and Discriminator) working against eachother, as depicted in \ref{fig:GAN}.
+
+\myfigure{figures/GAN.pdf}
+    {width=0.8\textwidth, height=0.5\textheight} % max width / height
+    {a generative adverserial network}   % caption
+    {GAN}   % optional short caption for table of figures
+    {fig:GAN}    % label
+
 \subsection{Overfitting}
 \label{sec:overfitting}
 When a model performs good on training, but bad on testing data, this is called overfitting. It happens when the model is "memorizing" the answers, which results in less general knowledge.
