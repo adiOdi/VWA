@@ -1,8 +1,8 @@
-\def\fileversion{0.0.1}
-\def\filedate{2018/10/21}
+\def\fileversion{0.0.2}
+\def\filedate{2022/02/06}
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{vwa}[\filedate\space Version \fileversion\space by Manuel Menzinger]
+\ProvidesClass{vwa}[\filedate\space Version \fileversion\space by Manuel Menzinger\space revised by Adriel Ondas]
 
 \LoadClass[
     fontsize=12pt,
