@@ -20,7 +20,7 @@
 \usepackage{csquotes}
 
 \setlength{\marginparwidth}{0pt}
-\setlength{\hoffset}{25pt}
+\setlength{\hoffset}{0pt}
 
 \RequirePackage[
     %%% general options
