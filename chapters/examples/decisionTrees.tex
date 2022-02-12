@@ -10,7 +10,9 @@ The hard part is figuring out what question the next node will split the data by
 One method of measuring the usefulness of a question is the Gini method.
 It is calculated as follows: Gini impurity $= 1-(yes/n)^2-(no/n)^2$
 The smaller this impurity, the less mixed the output is. Which is what we want, as less mixed means the tree is surer of its output. 
-So to choose the next node to add to a tree, we measure the GINI impurity of all possible parameters, and choose the one with the smallest impurity. We repeat this process until we only have few samples left in each leaf. %example
+So to choose the next node to add to a tree, we measure the GINI impurity of all possible parameters, and choose the one with the smallest impurity. We repeat this process until we only have few samples left in each leaf. 
+%example:
+https://www.w3schools.com/python/python_ml_decision_tree.asp
 
 Once created, to find an answer, one must walk down the tree, following the path the nodes lead you, until an end (a leaf) is met.
 
