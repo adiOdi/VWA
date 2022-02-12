@@ -1,3 +1,4 @@
 Itemize throws an error (font does not find bullet point symbol)
 Brackets as autofill tells me to do them: \left(  \right)) throw an error
 duplicate labels warning while there are none
+links italic/underline/see:
