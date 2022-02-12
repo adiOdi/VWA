@@ -17,7 +17,7 @@
 \RequirePackage{graphicx} % to include graphics
 \RequirePackage[usenames,dvipsnames,hyperref]{xcolor}
 \usepackage{multicol}
-% \usepackage{csquotes}
+\usepackage{csquotes}
 
 \setlength{\marginparwidth}{0pt}
 \setlength{\hoffset}{0pt}
@@ -54,10 +54,10 @@
     anchorcolor=Black,
     colorlinks=true % true to prevent ugly borders
 }
-% \usepackage[
-%     style=ieee,
-%     sorting=none
-% ]{biblatex}
+\usepackage[
+    style=ieee,
+    sorting=none
+]{biblatex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
