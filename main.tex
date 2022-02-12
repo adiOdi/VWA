@@ -10,9 +10,11 @@
 \subtitle{a categorization}
 \author{Adriel Ondas}
 \date{2020-2022} % can be any text (date) or the command \today
-
+\addbibresource{zotero.bib}
 \makeatletter
 \begin{document}
+
+
 
 \mymaketitle
 \include{chapters/preface}
@@ -30,8 +32,11 @@
 
 %% bibliography
 % \nocite{*} % show all references (include unused references)
-\bibliographystyle{plain}
-\bibliography{references/zotero} % print bibliography
+
+\DeclareFieldFormat[online]{title}{\mkbibemph{#1}\isdot}
+% \bibliographystyle{plain}
+% \bibliography{zotero} % print bibliography
+\printbibliography
 
 %% appendix
 \appendix

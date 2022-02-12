@@ -17,6 +17,7 @@
 \RequirePackage{graphicx} % to include graphics
 \RequirePackage[usenames,dvipsnames,hyperref]{xcolor}
 \usepackage{multicol}
+\usepackage{csquotes}
 
 \setlength{\marginparwidth}{0pt}
 \setlength{\hoffset}{25pt}
@@ -53,7 +54,11 @@
     anchorcolor=Black,
     colorlinks=true % true to prevent ugly borders
 }
-
+\usepackage[
+    backend=biber,
+    style=ieee,
+    sorting=none
+]{biblatex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
