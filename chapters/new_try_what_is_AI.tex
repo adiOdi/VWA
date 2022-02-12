@@ -1,10 +1,10 @@
 \chapter{What is artificial intelligence?}
-\section{Definition}
 First it is necessary defining what is meant by artificial intelligence in this thesis, as there is a broad range of definitions.%http://agisi.org/Defs_intelligence.html
 
 To get an overview it is helpful to view an artificial intelligence as an entity, a sort of black box. This construct can be called an "Agent". 
 This thesis will shed some light into these black boxes.
 
+\section{Defining Artificial intelligence}
 \subsection{Agents}
 First, an agent has to get an input, like sound from a microphone, or a click position on a website.
 Then, it has to process this input, 
@@ -36,13 +36,14 @@ Important to stress here are two separate concepts: Learning, and thinking logic
 In artificial intelligence, these concepts can be separated, as to say there is a learning, and an applied phase, where the logical thinking comes into play. % examples+more detailed
 There are also models combining these two phases, where learning takes place while also applying the previously learned. 
 
-\section{Restriction}
+
+\subsection{Artificial intelligence}
+Artificial Intelligence can therefore be defined as an intelligent agent, which this work will focus on. 
 This restriction of only intelligent agents is still not very narrow, as intelligent agents can still be a lot of things: A calculator has input, processes it intelligently, and shows the result, as does a player of a game.
 
-
-\section{General}
-\subsection{Usage}
-But there are very different models for artificial intelligence, as will be explained in more detail in the next chapters, but of course they all have their own little problems but also advantages. So in practical use, different models are often chained together, to leverage the advantages of each sort of agent, to create an agent better than the individual agents. %examples, but also rewrite
+\section{Further definitions}
+\subsection{Combination}
+But there are very different models for artificial intelligence, as will be explained in more detail in the next chapters, but of course they all have their own little problems but also advantages. So in practical use, different models are often chained together, to leverage the advantages of each sort of agent, to create an agent better than the individual agents. %erewrite
 A GAN - a generative adverserial network would be one example: In such a setup there are two sub-agents (Generator and Discriminator) working against eachother, as depicted in \ref{fig:GAN}.
 
 \myfigure{figures/GAN.pdf}
@@ -55,5 +56,6 @@ A GAN - a generative adverserial network would be one example: In such a setup t
 \subsection{Overfitting}
 \label{sec:overfit}
 When a model performs good on training, but bad on testing data, this is called overfitting. It happens when the model is "memorizing" the answers, which results in less general knowledge.
+
 \subsection{Cross validation}
 To combat overfitting cross validation can be used. Cross validation is a process where the border between training and test data is defined differently a few times, and the same learning algorithm is applied to all of these cases. Then the best one is used.
