@@ -73,7 +73,7 @@
         \begin{multicols}{2}             
             KLEX\\Klusemann Extern\\Marschallgasse 19-21\\A-8020 Graz
             \vfill\hfill % next column/align right
-            \includegraphics[height=2.5cm]{figures/KLex-Logo.pdf}
+            \includegraphics[height=2.5cm]{figures/Klex-Logo.pdf}
         \end{multicols}
         \vfill
         \par
@@ -83,6 +83,9 @@
         { % else
             \Large \@subtitle \par
         }
+
+        % \includegraphics[height=4cm]{figures/Klex-Logo.pdf}
+
         \@ifundefined{@author}{}
         { % else
             \vspace{1cm}
