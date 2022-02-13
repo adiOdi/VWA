@@ -28,3 +28,5 @@ backpropagation
 Mixing
 
 https://www.elementsofai.com/
+
+Consistency of spelling AI
