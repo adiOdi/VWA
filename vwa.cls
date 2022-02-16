@@ -16,6 +16,7 @@
 \RequirePackage[automark]{scrlayer-scrpage} % for auto generated headings
 \RequirePackage{graphicx} % to include graphics
 \RequirePackage[usenames,dvipsnames,hyperref]{xcolor}
+\usepackage{abstract}
 \usepackage{multicol}
 \usepackage{csquotes}
 

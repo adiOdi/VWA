@@ -12,8 +12,8 @@ Subsymbolic artificial intelligence on the other hand depends on Data being avai
 Another aspect to keep in mind is the accuracy: Symbolic artificial intelligence can have a 100 percent accuracy rate when programmed correctly, as it is just logical statements and numbers chained together by some operators, while with a subsymbolic artificial intelligence it is normally hard to get a 100 percent accurate model, and most models are capped at some (high) percentage of accuracy. This is in part because of incorrect/incomplete data, but also because of considerations like time and resource constrains while training. Subsymbolic artificial intelligence can still be more accurate in certain domains: When there is no one correct answer but good data for example.
 As it is often the case, there is a cost-accuracy payoff, and whether subsymbolic or symbolic artificial intelligence is better suited really depends on the use case. Often they are combined to achieve better results. This work will focus on subsymbolic artificial intelligence. 
 
-\subsection{Data}
 The requirement for data in subsymbolic artificial intelligence is also the reason why data collection is getting increasingly important in our time. 
+% maybe not a whole chapter
 
 \section{Supervised vs unsupervised learning} \cite[p695]{MA}
 In supervised learning, labeled data is used. In contrast to this, in unsupervised learning,  unlabeled data is used instead. 
@@ -32,15 +32,23 @@ In many algorithms, like, for example, neural nets one hurdle is finding a numbe
 So called parameterless approaches do not base their complexity on the problem, but rather on the training data available. Rather than representing the problem with parameters, often a part of the training data/the whole of it is used to come to a decision. This can be, for example, clustering.
 One example for a parameterless approach is K-nearest neighbors/Support vector machines \autoref{sec:SVM}
 
-\section{Comparison}
-\begin{tabular}{l p{0.33\textwidth} p{0.33\textwidth}}
-    Metric      & Symbolic  & Subsymbolic\\
-    Complexity  & ? & ? \\
-    Training    & none & yes \\
-    Application & deterministic&could be nondeterministic\\
-    Performance & ? & ? \\
-    Memory      & ? & ? \\
-\end{tabular}
+\section{Classification}
+Decision trees can be categorized as subsymbolical (more symbolical than other algorithms through), are trained supervised, and are a sort of parameterless algorithm.
+
+Neural nets can be categorized as subsymbolical, are trained supervised, and are a sort of parametered algorithm.
+
+Q-Tables can be categorized as subsymbolical, are trained supervised, and are a sort of parameterless algorithm.
+
+SVMs can be categorized as subsymbolical, can be trained unsupervised, and are a parameterless algorithm.
+
+% \begin{tabular}{l p{0.33\textwidth} p{0.33\textwidth}}
+%     Metric      & Symbolic  & Subsymbolic\\
+%     Complexity  & ? & ? \\
+%     Training    & none & yes \\
+%     Application & deterministic&could be nondeterministic\\
+%     Performance & ? & ? \\
+%     Memory      & ? & ? \\
+% \end{tabular}
 
 % Complexity: SVM/DT/NN
 
