@@ -9,7 +9,44 @@
     Buch reinforcement learning an introduction
 towards data science
 
+25.06.2020:
+Da hab ich info im Kalender stehen, möglicherweise haben wir da geredet.
+
+24.09.2020:
+treffen vor Info
+
+27.01.2021:
+Da hab ich info im Kalender stehen, möglicherweise haben wir da geredet.
+
+22.04.2021:
+treffen vor Info
+
+24.05.2021:
+treffen vor Info
 transhumanismus
+
+26.10.21:
+Update des Arbeitsplans/der Struktur
+
+16.12.21:
+Feedback vor Info:
+Data=Learning/Knowledge=programming symbolisch/subsymbolisch
+backpropagation
+Mixing
+
+29.12.2022:
+Feedback 1 bekommen
+
+19.01.2022:
+feedback 2 bekommen
+https://www.elementsofai.com/
+
+03.02.2022:
+gespräch vor Info
+
+
+TODO:
+Consistency of spelling AI
 
 What artificial intelligence is? 
     artificial intelligence is just a tool
@@ -21,12 +58,3 @@ what effect the use of artificial intelligence has on society?
         can be used maliciously, can be unaligned
 how we can build aligned and save artificial intelligence
     we dont, its a tool, but we can try
-
-22.12.21:
-Data=Learning/Knowledge=programming symbolisch/subsymbolisch
-backpropagation
-Mixing
-
-https://www.elementsofai.com/
-
-Consistency of spelling AI
