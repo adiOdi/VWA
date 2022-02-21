@@ -8,7 +8,9 @@
     fontsize=12pt,
     bibliography=totoc,
     open=right,
-    parskip=half
+    parskip=half,
+    DIV=13, 
+    BCOR=2cm
 ]{scrbook} % based on KOMA-Script book class
 \RequirePackage[utf8]{inputenc} % enable special characters like ü,ö,ä,ß,...
 \RequirePackage[T1]{fontenc} % for correct encoding in PDF documents
@@ -96,11 +98,11 @@
             \vspace{1cm}
             \large Vorwissenschaftliche Arbeit\\vorgelegt von \@author \par
         }
-        \large BetreuerIn: Manuel Menzinger \par
+        \large Betreuer: Manuel Menzinger \par
         \@ifundefined{@date}{}
         { % else
             \vspace{1cm}
-            \Large Schuljahr \@date
+            \Large Schuljahre \@date
         }
         \vfill
     \end{titlepage}

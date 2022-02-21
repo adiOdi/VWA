@@ -1,10 +1,11 @@
 \chapter{Categorization}
+\label{sec:categorization}
 % Simple map
 As there are many models of artificial intelligence, all working differently, there are also a few distinctions that can be made between them. This thesis will focus on three fairly important distinctions that can be drawn between different models.
-\section{Symbolic vs subsymbolic} \cite{SymbolicVsSubsymbolic}
+\section{Symbolic vs subsymbolic} \label{sec:categorization:symbolicvssub} \cite{SymbolicVsSubsymbolic}
 A first big distinction is to make between symbolic and subsymbolic artificial intelligence. 
 The difference is in how knowledge about the environment is stored and used.
-In symbolic artificial intelligence, knowledge is coded into an agent, while in subsymbolic artificial intelligence knowledge is generally learned by an agent through observations (=data). These observations can either be pre-recorded or acquired by trial and error. (The structure is still hard coded)
+In symbolic artificial intelligence, knowledge is coded into an agent, while in subsymbolic artificial intelligence knowledge is generally learned by an agent through observations (=data). These observations can either be pre-recorded or acquired by trial and error. So the content of the agents changes, while the structure still remains hard coded.
 
 Which sort of artificial intelligence is better to use really depends on the circumstances: 
 Symbolic artificial intelligence for a complex subject normally requires more time to program in comparison, and needs a programmer well versed in the subject. 
@@ -12,8 +13,10 @@ Subsymbolic artificial intelligence on the other hand depends on Data being avai
 Another aspect to keep in mind is the accuracy: Symbolic artificial intelligence can have a 100 percent accuracy rate when programmed correctly, as it is just logical statements and numbers chained together by some operators, while with a subsymbolic artificial intelligence it is normally hard to get a 100 percent accurate model, and most models are capped at some (high) percentage of accuracy. This is in part because of incorrect/incomplete data, but also because of considerations like time and resource constrains while training. Subsymbolic artificial intelligence can still be more accurate in certain domains: When there is no one correct answer but good data for example.
 As it is often the case, there is a cost-accuracy payoff, and whether subsymbolic or symbolic artificial intelligence is better suited really depends on the use case. Often they are combined to achieve better results. This work will focus on subsymbolic artificial intelligence. 
 
-The requirement for data in subsymbolic artificial intelligence is also the reason why data collection is getting increasingly important in our time. 
-% maybe not a whole chapter
+A decision tree for example can be made symbolically, but to create one subsymbolically, data is needed, which is used to shape the tree accordingly.
+The hard part is figuring out what question the next node will split the data by. 
+
+This requirement for data in subsymbolic artificial intelligence is also the reason why data collection is getting increasingly important in our time. 
 
 \section{Supervised vs unsupervised learning} \cite[p695]{MA}
 In supervised learning, labeled data is used. In contrast to this, in unsupervised learning,  unlabeled data is used instead. 

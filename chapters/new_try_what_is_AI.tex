@@ -42,10 +42,10 @@ There are also models combining these two phases, where learning takes place whi
 Artificial Intelligence can therefore be defined as an intelligent agent.
 This restriction of only intelligent agents is still not very narrow, as intelligent agents can still be a lot of things: A calculator has input, processes it intelligently, and shows the result.
 
-So this work will focus on only the more complicated intelligent agents.
+So this work will focus only on a few, in the authors' opinion more interessant intelligent agents.
 \section{Further definitions}
 \subsection{Combination}
-But there are very different models for artificial intelligence, as will be explained in more detail in the next chapters, they all have their advantages, but of course their own little problems as well. So in practical use, different agents are often chained together, to leverage the advantages of each sort of agent, to create a meta-agent better than the individual agents.
+While there are very different models for artificial intelligence, as will be explained in more detail in the next chapters, they all have their advantages, but of course their own little problems as well. So in practical use, different agents are often chained together, to leverage the advantages of each sort of agent, to create a so-called meta-agent better than the individual agents.
 A GAN - a generative adverserial network would be one example: In such a setup there are two sub-agents (Generator and Discriminator) working against eachother, as depicted in \ref{fig:GAN}, combined to an agent capable of much more than the individual sub-agents seperately.
 
 \myfigure{figures/GAN.pdf}
@@ -54,10 +54,12 @@ A GAN - a generative adverserial network would be one example: In such a setup t
     {GAN}   % optional short caption for table of figures
     {fig:GAN}    % label
 
+\subsection{Learning}
+The act of teaching an AI is called training. In subsymbolic AI \ref{sec:categorization:symbolicvssub}, this requires data, to determine what the agent learns. To find out how good an agent performs, often times the available data is split into two sets: A training, and a testing set. The training set is used to train the agent, while the testing set remains reserved for evaluating the performance of the agent.
 
-\subsection{Overfitting}
+\subsubsection{Overfitting}
 \label{sec:overfit}
-When a model performs good on a trainingset, but bad on the testing data, this is called overfitting. It happens when the model is "memorizing" the answers, which results in less general knowledge.
+When a model performs good on a trainingset, but bad on the testing data, this is called overfitting. It happens when the model is "memorizing" the answers, which results in less general knowledge. This can either be the caused by too big a model, or by bad training data\cite{overfit}. A robot might know its way exactly in one house, and do everything nearly perfect, so we might expect it to know how to map out a space, and how to parse the input it gets by its camera, but as soon as it is put into another house it might not know how to do anything. There, the robot has memorized the layout of the old house, instead of learning how to navigate any house.
 
-\subsection{Cross validation}
+\subsubsection{Cross validation}
 To combat overfitting cross validation can be used. Cross validation is a process where the border between training and test data is defined differently a few times, and the same learning algorithm is applied to all of these cases. Then the best one is used.
