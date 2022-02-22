@@ -20,7 +20,7 @@
 % \usepackage{abstract}
 \usepackage{multicol}
 \usepackage{csquotes}
-
+\usepackage{xurl}
 \setlength{\marginparwidth}{0pt}
 \setlength{\hoffset}{0pt}
 
@@ -39,7 +39,8 @@
     bookmarksopen=true,     %% if true, show all PDF bookmarks expanded
     bookmarksnumbered=true, %% if true, add the section numbers to the bookmarks
     % pdfstartpage={5},        %% determines, on which page the PDF file is opened
-    pdfpagemode=UseOutlines         %% UseOutlines (=show bookmarks), UseThumbs (show thumbnails), FullScreen
+    pdfpagemode=UseOutlines,         %% UseOutlines (=show bookmarks), UseThumbs (show thumbnails), FullScreen
+    breaklinks=true
 ]{hyperref}
 
 % PDF settings
