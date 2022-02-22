@@ -16,6 +16,5 @@ backpropagation image description
 SVM:
 Qtable-explain figure
 
-reerence figures in parentesis
-list of figures: my name, with figma
+reference figures in parentesis
 bibliography: 1: link: bug?

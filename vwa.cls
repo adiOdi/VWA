@@ -21,6 +21,7 @@
 \usepackage{multicol}
 \usepackage{csquotes}
 \usepackage{xurl}
+
 \setlength{\marginparwidth}{0pt}
 \setlength{\hoffset}{0pt}
 
@@ -40,9 +41,10 @@
     bookmarksnumbered=true, %% if true, add the section numbers to the bookmarks
     % pdfstartpage={5},        %% determines, on which page the PDF file is opened
     pdfpagemode=UseOutlines,         %% UseOutlines (=show bookmarks), UseThumbs (show thumbnails), FullScreen
-    breaklinks=true
+    % breaklinks=true
 ]{hyperref}
-
+% \usepackage{breakurl}
+% \def\UrlBreaks{\do\/\do-\do.}
 % PDF settings
 \hypersetup{
     pdftitle={\@title},
@@ -58,6 +60,7 @@
     colorlinks=true % true to prevent ugly borders
 }
 \usepackage[
+    backend=biber,
     style=ieee,
     sorting=none
 ]{biblatex}
@@ -123,7 +126,8 @@
     \begin{figure}[ht!]
           \centering
           \includegraphics[keepaspectratio,#2]{#1}
-          \caption[#4]{#3}
+          \caption[#4, by \@author, made with figma]{#3} % adds the main author 
+            %   \caption[#4, #6]{#3} % when adding individual authors
           \label{#5} %% NOTE: always label *after* caption!
     \end{figure}
 }
