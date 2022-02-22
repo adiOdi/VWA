@@ -7,10 +7,9 @@
 \LoadClass[
     fontsize=12pt,
     bibliography=totoc,
-    open=right,
-    parskip=half,
-    DIV=13, 
-    BCOR=2cm
+    open=any,
+    twoside=false,
+    parskip=half
 ]{scrbook} % based on KOMA-Script book class
 \RequirePackage[utf8]{inputenc} % enable special characters like ü,ö,ä,ß,...
 \RequirePackage[T1]{fontenc} % for correct encoding in PDF documents
