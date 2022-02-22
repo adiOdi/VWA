@@ -8,8 +8,6 @@ simple-depiction here
 classification: rethinking, not so strict, => not clear
 
 usage
-abstract
-thank you
 list of figures in contents
 cite definitions in what is ai
 backpropagation image description
