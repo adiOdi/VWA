@@ -6,10 +6,12 @@
 
 \LoadClass[
     fontsize=12pt,
-    bibliography=totoc,
-    listof=totoc,
-    open=any,
-    twoside=false,
+    bibliography=totoc, % totoc=to table of contents
+    listof=totoc, % list of figures
+    open=any, % empty page when new chapter: right/any/left
+    % twoside=false, % one/twosided (all the same or difference)
+    % DIV=13, % outside
+    BCOR=3cm, % inside
     parskip=half
 ]{scrbook} % based on KOMA-Script book class
 \RequirePackage[utf8]{inputenc} % enable special characters like ü,ö,ä,ß,...
@@ -18,13 +20,20 @@
 \RequirePackage[automark]{scrlayer-scrpage} % for auto generated headings
 \RequirePackage{graphicx} % to include graphics
 \RequirePackage[usenames,dvipsnames,hyperref]{xcolor}
-% \usepackage{abstract}
+
 \usepackage{multicol}
 \usepackage{csquotes}
 \usepackage{xurl}
 
-\setlength{\marginparwidth}{0pt}
-\setlength{\hoffset}{0pt}
+\addtolength{\oddsidemargin}{-1cm}
+\addtolength{\evensidemargin}{-1cm}
+\addtolength{\textwidth}{2cm}
+
+% \addtolength{\topmargin}{-1cm}
+% \addtolength{\textheight}{2cm}
+
+% \setlength{\marginparwidth}{0pt}
+% \setlength{\hoffset}{0pt}
 
 \RequirePackage[
     %%% general options
