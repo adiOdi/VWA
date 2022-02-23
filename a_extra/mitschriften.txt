@@ -1,8 +1,10 @@
 16.12.2020 9:00-9:40:
+besprochen:
     Artificial intelligence-A modern approach stuart russel, peter norvig
-    Schauen, ob es in der Unibibliothek Literatur gibt
     Latex-miktech
-    zote
+    zotero
+Aufgaben:
+    Schauen, ob es in der Unibibliothek Literatur gibt
 
 12.01.2020 17:30-17:55:
     Durchschauen von Eingabemaske
@@ -34,27 +36,10 @@ Data=Learning/Knowledge=programming symbolisch/subsymbolisch
 backpropagation
 Mixing
 
-29.12.2022:
-Feedback 1 bekommen
-
-19.01.2022:
-feedback 2 bekommen
-https://www.elementsofai.com/
-
 03.02.2022:
 gespräch vor Info
 
+23.02.2022: 
+Abschlussgespräch
 
-TODO:
-Consistency of spelling AI
 
-What artificial intelligence is? 
-    artificial intelligence is just a tool
-what effect the use of artificial intelligence has on society? 
-    missuse/good use
-    what previously impossible to solve tasks can be solved using artificial intelligence?
-        loads of data
-    what new problems arise
-        can be used maliciously, can be unaligned
-how we can build aligned and save artificial intelligence
-    we dont, its a tool, but we can try

@@ -7,6 +7,7 @@
 \LoadClass[
     fontsize=12pt,
     bibliography=totoc,
+    listof=totoc,
     open=any,
     twoside=false,
     parskip=half
@@ -126,7 +127,7 @@
     \begin{figure}[ht!]
           \centering
           \includegraphics[keepaspectratio,#2]{#1}
-          \caption[#4, by \@author, made with figma]{#3} % adds the main author 
+          \caption[#4]{#3} % adds the main author 
             %   \caption[#4, #6]{#3} % when adding individual authors
           \label{#5} %% NOTE: always label *after* caption!
     \end{figure}
