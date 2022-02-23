@@ -29,8 +29,9 @@
 \addtolength{\evensidemargin}{-1cm}
 \addtolength{\textwidth}{2cm}
 
-% \addtolength{\topmargin}{-1cm}
-% \addtolength{\textheight}{2cm}
+% \addtolength{\topmargin}{0}
+% \addtolength{\bottommargin}{-1cm}
+\addtolength{\textheight}{1.5cm}
 
 % \setlength{\marginparwidth}{0pt}
 % \setlength{\hoffset}{0pt}
@@ -49,7 +50,7 @@
     bookmarks=true,          %% if true, generate PDF bookmarks (requires two passes of pdflatex)
     bookmarksopen=true,     %% if true, show all PDF bookmarks expanded
     bookmarksnumbered=true, %% if true, add the section numbers to the bookmarks
-    % pdfstartpage={5},        %% determines, on which page the PDF file is opened
+    % pdfstartpage={4},        %% determines, on which page the PDF file is opened
     pdfpagemode=UseOutlines,         %% UseOutlines (=show bookmarks), UseThumbs (show thumbnails), FullScreen
     % breaklinks=true
 ]{hyperref}
