@@ -5,7 +5,7 @@ SVM: jein... das ist ne sehr starke vereinfachung... Das curve-fitting passiert 
 fitting a curve to some points klingt nach simplem spline fitting oder nonlinear regression
 simple-depiction here
 
-classification: rethinking, not so strict, => not clear
+#classification: rethinking, not so strict, => not clear
 
 usage
 list of figures in contents
