@@ -1,20 +1,14 @@
-TODO:
 SVM: vereinfachung... Das curve-fitting passiert ja durch mapping von features in ne höhere dimension um das problem zu linearisieren und dann optimal (möglichst großem abstand) zu lösen (und dann mapping retour)
 fitting a curve to some points klingt nach simplem spline fitting oder nonlinear regression
 simple-depiction here
 
 cite definitions in what is ai
 backpropagation image description
-usage everywhere..?
-Consistency of spelling AI
 
 list of figures: better description, based on
-list of figures in contents
-reference figures in parentesis "as can be seen in"
-bibliography: 1: link: bug nicht blocksatz
 
-Conclusion
+~Conclusion
 
 #Qtable-explain figure
 #classification: rethinking, not so strict, => not clear
-#overfit:das kapitel könnte man sicher noch etwas ausweiten, das ist schon sehr vereinfacht. Beispiele wären auch gut.
+#overfit:das kapitel könnte man sicher noch etwas ausweiten, das ist schon sehr vereinfacht.
