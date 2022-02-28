@@ -3,10 +3,10 @@
 A decision tree is a tree consisting of nodes, in which each node answers a yes/no question. \autoref{fig:decisiontree}
 
 One method of measuring the usefulness of a question is the Gini method.
-The Gini method uses a function where the inputs are: the number of samples this node has to sort (n), the amount of samples sorted to yes(yes), and the amount sorted to no(no), which are combined to give the relative percentage of true and false outcomes. It gives out an output between 0 and 1, showing the mixedness of the output.
+The Gini method uses a function where the inputs are: the number of samples this node has to sort (n), the amount of samples sorted to yes (yes), and the amount sorted to no (no), which are all combined to give the relative percentage of true and false outcomes. It gives out an output between 0 and 1, showing the mixedness of the output.
 It is calculated as follows: Gini impurity $= 1-(yes/n)^2-(no/n)^2$ 
 This means that, for example, the data 11100000 has a gini impurity of $1-(3/8)^2-(5/8)^2=0.47$, the data 11111110 has a lower impurity (0.22).
-The smaller this impurity, the less mixed the output is. Which is what we want, as less mixed means the tree is surer of its output. 
+The smaller this impurity, the less mixed the output is. Which is what we want, because less mixed means the tree is surer of its output. 
 So to choose the next node to add to a tree, we measure the GINI impurity of all possible parameters, and choose the one with the smallest impurity. We repeat this process until we only have few samples left in each leaf. 
 An example for a decision tree and its building process can be found on the website w3schools.com:
 \cite{decisiontree}
@@ -14,15 +14,13 @@ An example for a decision tree and its building process can be found on the webs
 Once created, to find an answer, one must walk down the tree, following the path the nodes lead you, until an end (a leaf) is found.
 
 \subsection{Usage}
-There are two advantages of decision trees in comparison to other forms of AI. One is the ease of understanding it, as we can retrace decisions with relative ease, which is very important in applications where trust in an algorithm is an issue. So for example in an environment where job applications or prison sentences are guided by algorithms, it might be required to be able to check the algorithm for, for example, discriminatory behavior.
+There are two advantages of decision trees in comparison to other forms of AI. One is the ease of understanding it, as we can retrace decisions easily, which is very important in applications where trust in an algorithm is an issue. So for example in an environment where job applications or prison sentences are guided by algorithms, the ability to check the algorithm for, for example, discriminatory behavior, might be a requirement.
 
-Another benefit decision trees offer is the low computational complexity, in both training and application. Of course, they can grow arbitrarily large, but with the right techniques they can be brought back to reasonable sizes, which just capture the essentials.
-
-
+Another benefit decision trees offer is the low computational complexity, in both training and application. Of course, they can grow arbitrarily large, but with the right techniques they can be brought back to reasonable sizes, and just capture the essentials.
 
 There are two methods for cutting the size of a tree: Early stopping and pruning. 
 
-In early stopping we stop a branch as soon as we cannot split the data with sufficiently low Gini impurity. This can be very efficient, but there are cases where one question does not help at all, but more do. One example would be an XOR-Gate, as any one input alone does not provide enough information, so the learning algorithm would stop, although the question could be answered by two questions.
+In early stopping we stop a branch as soon as we cannot split the data with sufficiently low Gini impurity. This can be very efficient, there are cases where one question does not help whatsoever, but a larger amount of questions would. One example would be an XOR-Gate, as any one input alone does not provide enough information, so the learning algorithm would stop, although the question could be answered by two questions.
 
 \begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
     featureA & featureB & output\\
