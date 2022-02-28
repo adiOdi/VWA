@@ -11,17 +11,8 @@ Aufgaben:
     Buch reinforcement learning an introduction
 towards data science
 
-25.06.2020:
-Da hab ich info im Kalender stehen, möglicherweise haben wir da geredet.
-
-24.09.2020:
-treffen vor Info
-
 27.01.2021:
 Da hab ich info im Kalender stehen, möglicherweise haben wir da geredet.
-
-22.04.2021:
-treffen vor Info
 
 24.05.2021:
 treffen vor Info

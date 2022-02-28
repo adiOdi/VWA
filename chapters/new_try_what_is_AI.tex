@@ -56,7 +56,7 @@ A GAN - a generative adverserial network would be one example: In such a setup t
 The act of teaching an AI is called training. In subsymbolic AI \autoref{sec:categorization:symbolicvssub}, this requires data, to determine what the agent learns. To find out how good an agent performs, often times the available data is split into two sets: A training, and a testing set. The training set is used to train the agent, while the testing set remains reserved for evaluating the performance of the agent.
 
 \subsubsection{Overfitting}
-\label{sec:overfit}
+\label{sec:overfitting}
 When a model performs good on a trainingset, but bad on the testing data, this is called overfitting. It happens when the model is "memorizing" the answers, which results in less general knowledge. This can either be the caused by too big a model, or by bad training data\cite{overfit}. A robot might know its way exactly in one house, and do everything nearly perfect, so we might expect it to know how to map out a space, and how to parse the input it gets by its camera, but as soon as it is put into another house it might not know how to do anything. There, the robot has memorized the layout of the old house, instead of learning how to navigate any house.
 
 \subsubsection{Cross validation}
