@@ -13,7 +13,6 @@ list of figures in contents
 reference figures in parentesis "as can be seen in"
 bibliography: 1: link: bug nicht blocksatz
 
-vorlage meetings
 Conclusion
 
 #Qtable-explain figure
