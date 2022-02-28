@@ -10,7 +10,7 @@
 !zotero.bib
 !main.tex
 !vwa.cls
-
+!formelles.tex
 # ignore everything but .tex files in chapters and subfolders of it
 !chapters
 chapters/*
