@@ -1,12 +1,12 @@
 \chapter{What is artificial intelligence?}
 % copypaste please
-First it is necessary to define what is meant by artificial intelligence in this thesis as there is a broad range of definitions.%http://agisi.org/Defs_intelligence.html
+First it is necessary to define what is meant by artificial intelligence in this thesis as there is a broad range of definitions. \cite{definitionAI}
 
 To get an overview it is helpful to view an artificial intelligence as an entity, a sort of black box. This construct can be called an "Agent". 
 This thesis will shed some light onto these black boxes.
 
 \section{Defining Artificial intelligence}
-\subsection{Agents}
+\subsection{Agents} \cite[p. 34]{MA}
 First, an agent has to get an input, like sound from a microphone, or a click position on a website.
 Then it has to process this input, and lastly it has to have some sort of output, for instance driving somewhere, or showing different things on a screen.
 
@@ -17,7 +17,6 @@ Then it has to process this input, and lastly it has to have some sort of output
     {fig:agent}    % label
 
 We call the input "Percept", and the output "Action". As seen in \autoref{fig:agent}
-% cite(modernapproach)
 
 Agents vary widely in their implementation and function, and can range from bots on the web, to the microchip in your smart stove or Roomba. 
 There are many kinds of agents, because they have to act in different environments, for example a computer, a room where a robot is driving around, a map, a game, ...
@@ -51,7 +50,7 @@ A GAN - a generative adverserial network would be one example: In such a setup t
     {GAN}   % optional short caption for table of figures
     {fig:GAN}    % label
 
-\subsection{Learning}
+\subsection{Learning} \cite[p. 693]{MA}
 The act of teaching artificial intelligence or letting it learn is called training. In subsymbolic artificial intelligence \autoref{sec:categorization:symbolicvssub}, this requires data, to determine what the agent learns. To find out how well an agent performs, often times the available data is split into two sets: A training, and a testing set. The training set is used to train the agent, while the testing set remains reserved for evaluating the performance of the agent.
 
 \subsubsection{Overfitting}
@@ -59,4 +58,5 @@ The act of teaching artificial intelligence or letting it learn is called traini
 When a model performs well on a trainingset, but bad on the testing data, this is called overfitting. It happens when the model is "memorizing" the answers, which results in less general knowledge. This can either be caused by too big a model, or by bad training data\cite{overfit}. A robot might know its way exactly in one house, and do everything nearly perfect, so we will probably expect it to know how to map out a space, and how to parse the input it gets from its camera, but as soon as it is put into another house it might not know how to do anything. There, the robot has memorized the layout of the old house, instead of learning how to navigate any house.
 
 \subsubsection{Cross validation}
+\cite[p. 709]{MA}
 To combat overfitting cross validation can be used. Cross validation is a process where the border between training and test data is defined differently a few times, and the same learning algorithm is applied to all of these cases. Then the best one is used.

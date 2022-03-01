@@ -1,5 +1,6 @@
 \section{Q-Tables}
 \label{sec:QTable}
+\cite[TicTacToe Example]{c4f}
 A Q-Table is a very literal interpretation of the definition of AI: As an AI maps inputs to outputs, a very simple method would just be a table. Implementing such a table is only possible in discrete space, as every state has to have an action assigned to it.
 
 Training a Q-Table is relatively straightforward: There is a score assigned to every State/Action pair \autoref{fig:qtable}. Then the agent can learn with reinforcement learning: Should an action lead to a positive reward the score of the previous state-action pair is updated up slightly and vice versa.
