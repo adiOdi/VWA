@@ -8,12 +8,12 @@ First the amount of layers and nodes has to be defined, and to train the neural 
 As there are normally too many possible values for the parameters not every possible combination can be brute forced. There are different methods for tuning the parameters. Of course these parameters could, in theory, also be filled in by hand, but this is normally not feasible. Two of the methods to fill them in are back propagation and evolutionary learning.
 
 \subsection{Backpropagation}
-In backpropagation see \autoref{fig:backpropagation}, a supervised method, an input is given, and the output is compared to the known correct output. Then the nodes responsible for the biggest error are slightly nudged in the right direction. 
+In backpropagation see \autoref{fig:backpropagation}, a supervised method, an input is given, and the output is compared to the known correct output. Then the parameters of the individual nodes are slightly nudged in the right direction, depending on their influence on the difference noted. 
 
 \myfigure{figures/VWA-Backpropagation.pdf}
     {width=0.8\textwidth, height=0.5\textheight} % max width / height
     {Neural network and backpropagation}   % caption
-    {Backpropagation}   % optional short caption for table of figures
+    {A neural net, colored in to show how backpropagation works}   % optional short caption for table of figures
     {fig:backpropagation}    % label
     
 \subsection{Evolutionary learning}
