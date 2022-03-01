@@ -6,7 +6,15 @@ To get an overview it is helpful to view an artificial intelligence as an entity
 This thesis will shed some light onto these black boxes.
 
 \section{Defining Artificial intelligence}
-\subsection{Agents} \cite[p. 34]{MA}
+\subsection{Agents} 
+This section is based on \cite[p. 34f]{MA}
+
+\textit{
+"An agent is anything that can be viewed as perceiving its environment through sensors and acting upon that environment through actuators.
+...
+A human agent has eyes, ears, and other organs for sensors and hands, legs, vocal tract, and so on for actuators. A robotic agent might have cameras and infrared range finders for sensors and various motors for actuators. A software agent receives keystrokes, file contents, and network packets as sensory inputs and acts on the environment by displaying on the screen,
+writing files, and sending network packets."} \cite[p. 34]{MA}
+
 First, an agent has to get an input, like sound from a microphone, or a click position on a website.
 Then it has to process this input, and lastly it has to have some sort of output, for instance driving somewhere, or showing different things on a screen.
 
@@ -19,7 +27,7 @@ Then it has to process this input, and lastly it has to have some sort of output
 We call the input "Percept", and the output "Action". As seen in \autoref{fig:agent}
 
 Agents vary widely in their implementation and function, and can range from bots on the web, to the microchip in your smart stove or Roomba. 
-There are many kinds of agents, because they have to act in different environments, for example a computer, a room where a robot is driving around, a map, a game, ...
+There are many kinds of agents, because they have to act in different environments, for example a simulated world, a room where a robot is driving around, a map, a game, some website, ...
 
 This thesis however, will mostly focus on the internal structure of the agents, which can be similar, even through the corresponding agents are acting in very different environments.
 The goal of this thesis is giving an overview of these different internal structures, assisted by examples.
@@ -40,8 +48,8 @@ Artificial Intelligence can therefore be defined as an intelligent agent.
 This restriction of only intelligent agents is still not very narrow, as intelligent agents can still be a lot of things: A calculator has input, processes it intelligently, and shows the result. Therefore, it can be classified as artificial intelligence. But this work will focus only on a few, in the authors' opinion more interesting intelligent agents.
 
 \section{Further definitions}
-\subsection{Combination}
-While there are very different models for artificial intelligence, as will be explained in more detail in the next chapters, they all have their advantages, but - of course - their own little problems as well. So in practice, different agents are often chained together, to leverage the advantages of each kind of agent, to create a so-called meta-agent, better than the individual agents.
+\subsection{Combination of agents}
+While there are very different models for artificial intelligence, as will be explained in more detail in the next chapters, they all have their advantages, but - of course - their own little problems as well. So in practice, different agents are often chained together, to leverage the advantages of each kind of agent, as to create a so-called meta-agent, which performs better than the individual agents.
 A GAN - a generative adverserial network would be one example: In such a setup there are two sub-agents (Generator and Discriminator) working against eachother, as seen in \autoref{fig:GAN}, combined to an agent capable of much more than the individual sub-agents seperately.
 
 \myfigure{figures/GAN.pdf}
@@ -50,13 +58,20 @@ A GAN - a generative adverserial network would be one example: In such a setup t
     {Building blocks of a generative adversarial network}   % optional short caption for table of figures
     {fig:GAN}    % label
 
-\subsection{Learning} \cite[p. 693]{MA}
-The act of teaching artificial intelligence or letting it learn is called training. In subsymbolic artificial intelligence \autoref{sec:categorization:symbolicvssub}, this requires data, to determine what the agent learns. To find out how well an agent performs, often times the available data is split into two sets: A training, and a testing set. The training set is used to train the agent, while the testing set remains reserved for evaluating the performance of the agent.
+\subsection{Learning} 
+This section is based on \cite[p. 693f]{MA}
+
+\textit{"An agent is learning if it improves its performance on future tasks after making observations
+about the world. Learning can range from the trivial, as exhibited by jotting down a phone
+number, to the profound, as exhibited by Albert Einstein, who inferred a new theory of the
+universe."} \cite[p. 693]{MA}
+The act of teaching artificial intelligence or letting it learn is called training. In subsymbolic artificial intelligence \autoref{sec:categorization:symbolicvssub}, this requires data, to determine what the agent learns. To find out how well an agent performs, often times the available data is split into two sets: A training, and a testing set. The training set is used to teach the agent, while the testing set remains reserved for evaluating the performance of the agent.
 
 \subsubsection{Overfitting}
 \label{sec:overfitting}
-When a model performs well on a trainingset, but bad on the testing data, this is called overfitting. It happens when the model is "memorizing" the answers, which results in less general knowledge. This can either be caused by too big a model, or by bad training data\cite{overfit}. A robot might know its way exactly in one house, and do everything nearly perfect, so we will probably expect it to know how to map out a space, and how to parse the input it gets from its camera, but as soon as it is put into another house it might not know how to do anything. There, the robot has memorized the layout of the old house, instead of learning how to navigate any house.
+When a model performs well on a trainingset, but bad on the testing data, this is called overfitting. It happens when the model is "memorizing" the answers, which results in less general knowledge. This can either be caused by too big a model, or by bad training data \cite{overfit}. A robot might know its way exactly in one house, and do everything nearly perfect, so we will probably expect it to know how to map out a space, and how to parse the input it gets from its camera, but as soon as it is put into another house it might not know how to do anything. There, the robot has memorized the layout of the old house, instead of learning how to navigate any house.
 
 \subsubsection{Cross validation}
-\cite[p. 709]{MA}
+This section is based on \cite[p. 709f]{MA}
+
 To combat overfitting cross validation can be used. Cross validation is a process where the border between training and test data is defined differently a few times, and the same learning algorithm is applied to all of these cases. Then the best one is used.

@@ -2,7 +2,8 @@
 \label{sec:categorization}
 % Simple map
 As there are many models of artificial intelligence, all working differently, there are also a few distinctions that can be made between them. This thesis will focus on three fairly important differences that can be found between different models.
-\section{Symbolic vs subsymbolic} \label{sec:categorization:symbolicvssub} \cite{SymbolicVsSubsymbolic}
+\section{Symbolic vs subsymbolic} \label{sec:categorization:symbolicvssub} \cite[This section is based on]{SymbolicVsSubsymbolic}
+
 A first big distinction is to make between symbolic and subsymbolic artificial intelligence. 
 The difference is in how knowledge about the environment is stored and used.
 In symbolic artificial intelligence, knowledge is coded into an agent, while in subsymbolic artificial intelligence knowledge is generally learned by an agent through observations (=data). These observations can either be pre-recorded or acquired by trial and error. So the content of the agents changes, while the structure still remains hard coded.
@@ -18,7 +19,10 @@ The hard part is figuring out what question the next node will split the data by
 
 This requirement for data in subsymbolic artificial intelligence is also the reason why data collection is getting increasingly important in our time. 
 
-\section{Supervised vs unsupervised learning} \cite[p. 695]{MA}
+\section{Supervised vs unsupervised learning} 
+This section is based on \cite[p. 695f]{MA}
+
+\label{sec:supervised}
 In supervised learning labeled data is used. In contrast to this, in unsupervised learning unlabeled data is used instead. 
 Labeled data is easier to use, but harder to get. Labeled data can be a lot of things, and it does not necessarily have to be human-labeled. A label can also be the output of an action, like, for example, the view time of a video on YouTube presented in different ways, or when the data is the weather yesterday, the label could be the weather today.
 
@@ -29,7 +33,9 @@ Here algorithms like support vector machines can be used to cluster data. Unsupe
 
 Of course these approaches can also be combined: In so called semi-supervised learning only parts of the data are labeled. This approach brings with it the convenience of not having to label all the data, while still having the greater accuracy and ease of supervised learning. \cite{semisupervised}
 
-\section{Parameterless vs Parameters} \cite[p. 737]{MA}
+\section{Parameterless vs Parameters} 
+This section is based on \cite[p. 737f]{MA}
+
 In many algorithms, for example neural nets, one hurdle is finding a number of parameters big enough to accurately describe a concept, while still not  overfitting [\autoref{sec:overfitting}]. The problem here is that this number of parameters is not universal, and has to be newly reconsidered for each problem. To eliminate this need for a decision, there are also parameterless options. 
 
 So called parameterless approaches do not base their complexity on the problem, but rather on the training data available. Rather than representing the problem with parameters, often a part or all of the training data is used to come to a decision. This can be, for example, clustering.

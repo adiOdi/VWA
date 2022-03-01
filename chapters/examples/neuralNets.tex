@@ -1,14 +1,19 @@
 \section{Neural nets} 
 \label{sec:NN}
-\cite[p. 727]{MA}
-A neural net is a structure where values are passed on through layers of nodes. Each node performs only a relatively simple operation with parameters inherit to each specific node.
+This section is based on \cite[p. 727f]{MA}
 
-First the amount of layers and nodes has to be defined, and to train the neural net, these parameters can be tuned.
+A neural net is a structure modeled after the brain, where values are passed on through layers of nodes. Each node performs only a relatively simple operation with parameters inherit to each specific node.
+
+The \autoref{fig:backpropagation} depicts a neural net. The first layer of four input nodes is feeding the second layer of six nodes via weighted links. Then the middle hidden layer feeds the information into the outputs, again via weighted links.
+
+First the amount of layers and nodes has to be defined, and to train the neural net, these weights have to be tuned.
 
 As there are normally too many possible values for the parameters not every possible combination can be brute forced. There are different methods for tuning the parameters. Of course these parameters could, in theory, also be filled in by hand, but this is normally not feasible. Two of the methods to fill them in are back propagation and evolutionary learning.
 
 \subsection{Backpropagation}
-In backpropagation see \autoref{fig:backpropagation}, a supervised method, an input is given, and the output is compared to the known correct output. Then the parameters of the individual nodes are slightly nudged in the right direction, depending on their influence on the difference noted. 
+In backpropagation see, a supervised method (as explained in \autoref{sec:supervised}), an input is given, and the output is compared to the known correct output. Then the parameters of the individual nodes are slightly nudged in the right direction, depending on their influence on the output. 
+
+This is also depicted in \autoref{fig:backpropagation}: First, an input is fed through. Then the output is compared to the known true output. At last, the weights are slightly adjusted all the way back, so the output gets a bit closer to the true one.
 
 \myfigure{figures/VWA-Backpropagation.pdf}
     {width=0.8\textwidth, height=0.5\textheight} % max width / height

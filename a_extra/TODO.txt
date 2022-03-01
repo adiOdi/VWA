@@ -9,3 +9,5 @@ simple-depiction here
 #classification: rethinking, not so strict, => not clear
 #overfit:das kapitel könnte man sicher noch etwas ausweiten, das ist schon sehr vereinfacht.
 #list of figures: better description, based on
+
+NN+svm example internet
