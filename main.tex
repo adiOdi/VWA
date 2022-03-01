@@ -16,7 +16,14 @@
 
 
 \mymaketitle
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
 \pagestyle{plain}
+\addtocounter{page}{-2}
 \include{chapters/abstract}
 \include{chapters/preface}
 \tableofcontents
@@ -30,6 +37,11 @@
 % categorisation>classification examples>categorization
 % conclusion: not easy to do, but good to learn, but basically classification summary
 
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
 %% list of figures
 \listoffigures
 All images without source were created by the author of this thesis.
@@ -41,9 +53,14 @@ All images without source were created by the author of this thesis.
 % \bibliography{zotero} % print bibliography
 \printbibliography
 
-\include{formelles.tex}
+% \newpage
+% \thispagestyle{empty}
+% \mbox{}
+% \newpage
+
+% \include{formelles.tex}
 %% appendix
-\appendix
+% \appendix
 
 %\chapter{Umfragebogen}
 %\label{apx:survey}
