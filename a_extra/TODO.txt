@@ -1,5 +1,6 @@
-SVM: vereinfachung... Das curve-fitting passiert ja durch mapping von features in ne höhere dimension um das problem zu linearisieren und dann optimal (möglichst großem abstand) zu lösen (und dann mapping retour)
+~SVM: vereinfachung... Das curve-fitting passiert ja durch mapping von features in ne höhere dimension um das problem zu linearisieren und dann optimal (möglichst großem abstand) zu lösen (und dann mapping retour)
 fitting a curve to some points klingt nach simplem spline fitting oder nonlinear regression
+
 simple-depiction here
 ~backpropagation image description
 ~Conclusion
