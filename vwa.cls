@@ -9,9 +9,9 @@
     bibliography=totoc, % totoc=to table of contents
     listof=totoc, % list of figures
     open=any, % empty page when new chapter: right/any/left
-    % twoside=false, % one/twosided (all the same or difference)
+    twoside=false, % one/twosided (all the same or difference)
     % DIV=13, % outside
-    BCOR=3cm, % inside
+    % BCOR=3cm, % inside
     parskip=half
 ]{scrbook} % based on KOMA-Script book class
 \RequirePackage[utf8]{inputenc} % enable special characters like ü,ö,ä,ß,...
